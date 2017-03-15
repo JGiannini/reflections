@@ -1,0 +1,33 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Quickly showed me which lines were changed in the new file so I could identify differences between the two files.  
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    If you make a mistake, you can easily go back to a previous save point. Viewing the file’s history can help you learn and improve over time—being able to see previous work helps you figure out how to make improvements. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros: I can choose when to save and push my work when it makes the most logical sense. Constant small auto-commits a la Google Docs style would make it difficult to review changes since they would also be committed randomly. I could have a commit made without even finishing a line of code or completing a logical task. Cons: I can accidentally go too long without making a commit, which can make trouble-shooting more challenging. Or I may forget to commit at all and lose my work. It puts the onus on the user, which is both good and bad.  
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Saving multiple files in one commit is necessary when you have more than one file that all rely on each other to produce a single output. Within one commit, I could have made important changes to each file. I can then go back to that one commit and use diff to quickly view all the changes made between the inter-related files.  
+
+How can you use the commands git log and git diff to view the history of files?
+
+    I can use git log to show me all commit history and the ID for each commit. I can then use git diff and paste the id of the prior commit and then the ID of the newer commit and see all insertions and deletions between the two commits. 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    I know I can always revert back to a previous commit if I introduce a bug. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    All work I do! I can see this will be a valuable tool. 
