@@ -15,10 +15,15 @@ Working directory ---> Staging ---> Repository
 
 Everything that’s in stage is committed together into my repository. 
 
+git diff = tells me diff between working directory and stage
+git diff --staged = diff between stage and most recent commit in repository
+git diff commit id (original) commit id (newer) = diff between commits in repository 
 
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+Stage lets me group changes I made in my working directory into logically grouped commits. So I can have one commit that includes more than one tweak vs. having multiple commits for every single change made in the working directory. 
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
