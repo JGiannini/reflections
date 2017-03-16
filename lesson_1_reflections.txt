@@ -31,3 +31,10 @@ could break something?
 Now that you have your workspace set up, what do you want to try using Git for?
 
     All work I do! I can see this will be a valuable tool. 
+
+All the commands I know:
+git diff = diff between two commits or between files within working directory
+git status = tells me the status (modified) of which files in stage
+git checkout = lets me switch between commits or branches (git branch)
+git clone = lets me clone a repository 
+git log = show me all of the commits + history for a repository 
