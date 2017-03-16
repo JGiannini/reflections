@@ -2,7 +2,8 @@ What happens when you initialize a repository? Why do you need to do it?
 
 Creates a repository for my Git commits. So I have a way to track changes to my files--or commits.  
 
-
+git init = initializes a repository 
+ls -a = lets me see the .git repository 
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
@@ -27,6 +28,8 @@ Stage lets me group changes I made in my working directory into logically groupe
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+I want to experiment with some new code changes or create a different language version but don’t want to change my main branch. Without branches I would have to checkout back to older commits and keep track of which commit is my main—that would get clunky and hard to keep organized. 
+
 
 How do the diagrams help you visualize the branch structure?
 
