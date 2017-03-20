@@ -32,12 +32,44 @@ I want to experiment with some new code changes or create a different language v
 
 
 How do the diagrams help you visualize the branch structure?
+The diagrams help me see where the branches break off from each other and the history of each branch’s commits.
+
+What is Detached Head State?
+This only happens when I checkout a commit, not a branch. It is when I have a commit that is not included in any branches. This is not good, because this commit will not show up in any git log commands. If I want to create a new branch to retain this commit I would have to run git branch new_branch_name and then running git checkout new_branch name. INSTEAD, I can just use 
+git checkout -b new_branch_name
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+They become one branch.
+
+How do you merge two branches?
+1. Ensure I’m on the master branch (git checkout master) or the opposite of this if I want to merge master with my other branch, i.e. merge master in with a branch I want to commit. 
+2. Run git merge master + [other branch name]
+3. I can run git show [commit id] to see a commit vs. its parent only. By parent we mean the exact commit that came before it on the same branch. Otherwise, running git diff [commit id original][commit id newer] would show me all the diffs that happened in between them on different branches and would create a long diff history. 
+4. Delete the old branch (aka other branch name) since it is no longer needed by running git branch -d [branch name I want to delete]
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+Automatic merging is fast and easy, manual merges allow you to carefully choose which changes from which branch go into the final commit. 
 
 All the commands I know:
+
+cd .. = moves me up a directory
+ls -a = lets me see the .git repository within my working directory 
+pwd = print working directory / tells me where I am
+cd [folder name] = moves me into the folder
+git clone = lets me clone a repository 
+git init = creates a git repository 
+git branch = shows me the branches
+git status = tells me the status (modified) of which files in stage
+git diff = tells me diff between working directory and stage
+git diff --staged = diff between stage and most recent commit in repository
+git diff commit id (original) commit id (newer) = diff between commits in repository 
+git add [file name] 
+git commit
+git checkout = lets me switch between commits or branches (git branch)
+git log —-graph —-oneline = short and readable way to view my commit history 
+git show [commit id] = will show me changes made to a commit against its parent aka compare a commit with its parent, without having to know what the parent is
+git log -n1 = shows me only 1 commit
+
 
